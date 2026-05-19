@@ -36,8 +36,11 @@ MODEL_NAMES = [
     "gpt-4o-2024-11-20",
     "gpt-4o-mini-2024-07-18",
 
+    "x-ai/grok-4.3",
     "grok-3",
 
+    "deepseek/deepseek-v4-pro",
+    "deepseek/deepseek-v4-flash",
     "deepseek-ai/DeepSeek-V3-0324",
     
     "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
@@ -128,12 +131,6 @@ def get_client(model_name: str):
             client = OpenAI(
                 api_key="token-abc123",
                 base_url="http://localhost:8000/v1",
-            )
-
-        elif "grok" in model_name:
-            client = OpenAI(
-                api_key=os.environ["XAI_API_KEY"],
-                base_url="https://api.x.ai/v1",
             )
         
         else:
@@ -283,7 +280,7 @@ def send_request(prompt: str, model_name: str):
 
             return response.choices[0].message.content
         
-        elif "glm" in model_name or "mimo" in model_name:
+        elif "glm" in model_name or "mimo" in model_name or "grok" in model_name:
             response = client.chat.completions.create(
                 model=model_name,
                 temperature=1,
