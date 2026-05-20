@@ -20,6 +20,7 @@ MODEL_NAMES = [
     "claude-3-5-sonnet-20240620",
     "claude-3-5-haiku-20241022",
     
+    "gemini-3.5-flash",
     "gemini-3.1-pro-preview",
     "gemini-3-pro-preview",
     "gemini-3-flash-preview",
@@ -120,10 +121,7 @@ def get_client(model_name: str):
             )
 
         elif "gemini" in model_name:
-            client = OpenAI(
-                api_key=os.environ["GEMINI_API_KEY"],
-                base_url="https://generativelanguage.googleapis.com/v1beta/"  
-            )
+            client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
         elif "mistral" in model_name or "behbudiy" in model_name or "Qwen3-4B" in model_name \
             or "llama-3.2" in model_name.lower() or "bxod" in model_name or "NeuronAI" in model_name:
@@ -220,12 +218,10 @@ def send_request(prompt: str, model_name: str):
             return result
         
         elif 'gemini' in model_name.lower():
-            client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-
             if "3" in model_name.lower():
                 thinking_config = types.ThinkingConfig(
-                    # thinkingLevel = "HIGH",
-                    include_thoughts=True
+                    thinkingLevel = "MINIMAL",
+                    # include_thoughts=True
                 )
 
             else:
