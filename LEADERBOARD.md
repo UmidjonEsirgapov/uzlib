@@ -28,6 +28,7 @@
 | [gpt-oss-120b](https://huggingface.co/openai/gpt-oss-120b) | OpenAI | 0.5492 | 0.5743 | 0.4576 | 0.3611 | 0.5 |
 | [Gemma 4 26B A4B](https://huggingface.co/google/gemma-4-26B-A4B-it) | Google | 0.5481 | 0.5683 | 0.4746 | 0.4444 | 0.4423 |
 | [DeepSeek-V3-0324](https://huggingface.co/deepseek-ai/DeepSeek-V3-0324) | DeepSeek | 0.5443 | 0.551 | 0.5212 | 0.5278 | 0.4808 |
+| [GLM 5.2](https://huggingface.co/zai-org/GLM-5.2) | Zhipu AI | 0.5384 | 0.5656 | 0.428 | 0.5 | 0.3077 |
 | [GPT 5 mini](https://platform.openai.com/playground/chat?models=gpt-5-mini) | OpenAI | 0.5293 | 0.5423 | 0.5 | 0.4861 | 0.3462 |
 | [GPT 4o mini](https://platform.openai.com/playground/chat?models=gpt-4o-mini-2024-07-18) | OpenAI | 0.5255 | 0.5410 | 0.4915 | 0.4306 | 0.3654 |
 | [MiMo V2 Flash](https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash) | Xiaomi | 0.5234 | 0.5583 | 0.3771 | 0.4028 | 0.3462 |

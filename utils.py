@@ -9,6 +9,7 @@ from google.genai import types
 load_dotenv()
 
 MODEL_NAMES = [
+    "claude-sonnet-5",
     "claude-opus-4-6",
     "claude-sonnet-4-6",
     "claude-opus-4-5-20251101",
@@ -70,6 +71,7 @@ MODEL_NAMES = [
 
     "moonshotai/kimi-k2",
 
+    "z-ai/glm-5.2",
     "z-ai/glm-4.6",
 
     "xiaomi/mimo-v2-flash:free",
