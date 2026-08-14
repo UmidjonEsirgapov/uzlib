@@ -2,9 +2,10 @@
 
 | **Model Name** | **Organization** | **All** | **Correct word** | **Meaning** | **Meaning in context** | **Fill in** |
 |:--------------:|:----------------:|:-------:|:----------------:|:-----------:|:----------------------:|:-----------:|
-| [Gemini 3 Pro Preview](https://aistudio.google.com/prompts/new_chat?model=gemini-3-pro-preview) | Google | **0.8264** | **0.8215** | **0.8644** | **0.875** | **0.7308** |
-| [Gemini 3 Flash Preview](https://aistudio.google.com/prompts/new_chat?model=gemini-3-flash-preview) | Google | 0.7953 | 0.7941 | 0.8517 | 0.7083 | 0.6923 |
-| [Gemini 3.1 Pro Preview](https://aistudio.google.com/prompts/new_chat?model=gemini-3.1-pro-preview) | Google | 0.7818 | 0.7801 | 0.8263 | 0.6944 | 0.75 |
+| [Gemini 3 Pro](https://aistudio.google.com/prompts/new_chat?model=gemini-3-pro-preview) | Google | **0.8264** | **0.8215** | **0.8644** | **0.875** | **0.7308** |
+| [Gemini 3.7 Flash](https://aistudio.google.com/prompts/new_chat?model=gemini-3.7-flash) | Google | 0.8092 | 0.8061 | 0.8432 | 0.8472 | 0.6923 |
+| [Gemini 3 Flash](https://aistudio.google.com/prompts/new_chat?model=gemini-3-flash-preview) | Google | 0.7953 | 0.7941 | 0.8517 | 0.7083 | 0.6923 |
+| [Gemini 3.1 Pro](https://aistudio.google.com/prompts/new_chat?model=gemini-3.1-pro-preview) | Google | 0.7818 | 0.7801 | 0.8263 | 0.6944 | 0.75 |
 | [Gemini 3.5 Flash](https://aistudio.google.com/prompts/new_chat?model=gemini-3.5-flash) | Google | 0.7614 | 0.7588 | 0.8008 | 0.69447639 | 0.6538 |
 | [DeepSeek-V4-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash) | DeepSeek | 0.7088 | 0.7222 | 0.6653 | 0.6944 | 0.5385 |
 | [Gemini 2.5 Pro](https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-pro) | Google | 0.6905 | 0.6795 | 0.7627 | 0.7778 | 0.5577 |
