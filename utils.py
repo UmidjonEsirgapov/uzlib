@@ -35,7 +35,6 @@ MODEL_NAMES = [
     "gpt-5",
     "gpt-5-mini",
     "gpt-5-nano",
-    "openai/gpt-5.6-luna",
     "gpt-4o-2024-11-20",
     "gpt-4o-mini-2024-07-18",
 
@@ -112,13 +111,7 @@ def get_client(model_name: str):
         return None
     
     try:
-        if model_name.startswith("openai/"):
-            client = OpenAI(
-                api_key=os.environ["OPENROUTER_API_KEY"],
-                base_url="https://openrouter.ai/api/v1",
-            )
-
-        elif "gpt" in model_name:
+        if "gpt" in model_name:
             client = OpenAI(
                 api_key=os.environ["OPENAI_API_KEY"]
             )
