@@ -60,6 +60,7 @@ MODEL_NAMES = [
     "Qwen/Qwen3.5-4B",
     "Qwen/Qwen3.5-2B",
     "Qwen/Qwen3.5-0.8B",
+    "qwen/qwen3.8-27b",
 
     "Qwen/Qwen3-235B-A22B-07-25",
     "Qwen/Qwen3-235B-A22B",
@@ -176,7 +177,7 @@ def send_request(prompt: str, model_name: str):
             return postprocess_text_bxod(result)
         
         elif 'qwen3' in model_name.lower():
-            if "qwen3.5" in model_name.lower():
+            if "qwen3.5" in model_name.lower() or "qwen3.8" in model_name.lower():
                 extra_body = {"reasoning": {"enabled": False}}
             else:
                 extra_body = {"chat_template_kwargs": {"enable_thinking": False}}

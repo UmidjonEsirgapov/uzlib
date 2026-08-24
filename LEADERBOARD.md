@@ -7,6 +7,7 @@
 | [Gemini 3 Flash](https://aistudio.google.com/prompts/new_chat?model=gemini-3-flash-preview) | Google | 0.7953 | 0.7941 | 0.8517 | 0.7083 | 0.6923 |
 | [Gemini 3.1 Pro](https://aistudio.google.com/prompts/new_chat?model=gemini-3.1-pro-preview) | Google | 0.7818 | 0.7801 | 0.8263 | 0.6944 | 0.75 |
 | [Gemini 3.5 Flash](https://aistudio.google.com/prompts/new_chat?model=gemini-3.5-flash) | Google | 0.7614 | 0.7588 | 0.8008 | 0.69447639 | 0.6538 |
+| [GPT-5.6 Luna](https://openrouter.ai/openai/gpt-5.6-luna) | OpenAI | 0.7141 | 0.7282 | 0.6653 | 0.7639 | 0.4615 |
 | [DeepSeek-V4-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash) | DeepSeek | 0.7088 | 0.7222 | 0.6653 | 0.6944 | 0.5385 |
 | [Gemini 2.5 Pro](https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-pro) | Google | 0.6905 | 0.6795 | 0.7627 | 0.7778 | 0.5577 |
 | [GPT 5.2](https://platform.openai.com/playground/chat?models=gpt-5.2) | OpenAI | 0.662 | 0.6696 | 0.6314 | 0.7083 | 0.5192 |
@@ -54,6 +55,7 @@
 | [Command A](https://huggingface.co/CohereForAI/c4ai-command-a-03-2025) | Cohere | 0.4186 | 0.4277 | 0.3771 | 0.3889 | 0.3846 |
 | [Qwen3.5 397B A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) | Alibaba | 0.4111 | 0.4017 | 0.5 | 0.2917 | 0.4423 |
 | [Mistral Nemo](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407) | Mistral AI | 0.4095 | 0.4344 | 0.2881 | 0.3611 | 0.3077 |
+| [Qwen3.8 27B](https://openrouter.ai/qwen/qwen3.8-27b) | Alibaba | 0.3955 | 0.4077 | 0.3559 | 0.3056 | 0.3462 |
 | [Qwen3 8B](https://huggingface.co/Qwen/Qwen3-8B) | Alibaba | 0.3853 | 0.3997 | 0.2924 | 0.3611 | 0.4231 |
 | [Qwen3.5 35B A3B](https://huggingface.co/Qwen/Qwen3.5-35B-A3B) | Alibaba | 0.3804 | 0.3797 | 0.3983 | 0.3333 | 0.3846 |
 | [Mistral Nemo Uz](https://huggingface.co/behbudiy/Mistral-Nemo-Instruct-Uz) | Behbudiy Labs | 0.3799 | 0.3951 | 0.2966 | 0.4167 | 0.2692 |
