@@ -106,8 +106,10 @@ MODEL_NAMES = [
     "NeuronUz/NeuronAI-Uzbek",
 
     "muse-spark-1.3-contributor",
-
+   
     "inclusionai/ling-3.0-flash",
+
+    "inception/mercury-2.5",
 ]
 
 def get_client(model_name: str):
@@ -323,8 +325,8 @@ def send_request(prompt: str, model_name: str):
 
             return response.output_text
 
-        elif "ling-3.0-flash" in model_name:
-            # The model emits long reasoning traces before answering, so
+        elif "ling-3.0-flash" in model_name or "mercury" in model_name:
+            # These models emit long reasoning traces before answering, so
             # max_tokens must be generous (256 truncates most responses).
             response = client.chat.completions.create(
                 model=model_name,
