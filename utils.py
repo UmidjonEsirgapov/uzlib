@@ -324,15 +324,9 @@ def send_request(prompt: str, model_name: str):
             return response.output_text
 
         elif "ling-3.0-flash" in model_name:
-            # Ling-3.0-flash via OpenRouter (https://openrouter.ai/api/v1).
             # The model emits long reasoning traces before answering, so
             # max_tokens must be generous (256 truncates most responses).
-            # Sampling params follow the benchmark standard.
-            ling_client = OpenAI(
-                api_key=os.environ["OPENROUTER_API_KEY"],
-                base_url="https://openrouter.ai/api/v1",
-            )
-            response = ling_client.chat.completions.create(
+            response = client.chat.completions.create(
                 model=model_name,
                 temperature=1,
                 top_p=0.95,
