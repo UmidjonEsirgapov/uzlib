@@ -106,6 +106,8 @@ MODEL_NAMES = [
     "NeuronUz/NeuronAI-Uzbek",
 
     "muse-spark-1.3-contributor",
+   
+    "inclusionai/ling-3.0-flash",
 
     "inception/mercury-2.5",
 ]
@@ -323,16 +325,10 @@ def send_request(prompt: str, model_name: str):
 
             return response.output_text
 
-        elif "mercury" in model_name:
-            # Mercury via OpenRouter (https://openrouter.ai/api/v1).
-            # The model emits long reasoning traces before answering, so
+        elif "ling-3.0-flash" in model_name or "mercury" in model_name:
+            # These models emit long reasoning traces before answering, so
             # max_tokens must be generous (256 truncates most responses).
-            # Sampling params follow the benchmark standard.
-            mercury_client = OpenAI(
-                api_key=os.environ["OPENROUTER_API_KEY"],
-                base_url="https://openrouter.ai/api/v1",
-            )
-            response = mercury_client.chat.completions.create(
+            response = client.chat.completions.create(
                 model=model_name,
                 temperature=1,
                 top_p=0.95,
