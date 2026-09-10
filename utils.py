@@ -41,9 +41,9 @@ MODEL_NAMES = [
     "x-ai/grok-4.3",
     "grok-3",
 
+    "deepseek/deepseek-v4.1-flash",
     "deepseek/deepseek-v4-pro",
     "deepseek/deepseek-v4-flash",
-    "deepseek-v4.1-flash",
     "deepseek-ai/DeepSeek-V3-0324",
     
     "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
@@ -119,13 +119,7 @@ def get_client(model_name: str):
         return None
     
     try:
-        if "v4.1-flash" in model_name:
-            client = OpenAI(
-                api_key=os.environ["DEEPSEEK_API_KEY"],
-                base_url="https://api.deepseek.com",
-            )
-
-        elif "gpt" in model_name:
+        if "gpt" in model_name:
             client = OpenAI(
                 api_key=os.environ["OPENAI_API_KEY"]
             )
@@ -145,6 +139,12 @@ def get_client(model_name: str):
             client = OpenAI(
                 api_key="token-abc123",
                 base_url="http://localhost:8000/v1",
+            )
+                
+        elif "v4.1-flash" in model_name:
+            client = OpenAI(
+                api_key=os.environ["DEEPSEEK_API_KEY"],
+                base_url="https://api.deepseek.com",
             )
         
         else:
